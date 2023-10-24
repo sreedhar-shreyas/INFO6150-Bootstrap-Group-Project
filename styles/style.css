@@ -70,8 +70,10 @@ h2,
 
   section.sectionBg.gradient-red {
     background: #FE5B7A;
-    /* background: linear-gradient(0deg, rgba(228, 228, 228, 0) 0%, #fe5b7a 100%); */
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 90%);
+    background: linear-gradient(0deg, rgba(228, 228, 228, 0) 0%, #fe5b7a 100%);
+    /* background: linear-gradient(0deg, rgba(228, 228, 228, 0) 0%, #b7fe5b 100%); */
+
+    /* background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 90%); */
   }
 
   .pageHeaderCon {
@@ -112,6 +114,41 @@ h2,
     z-index: -1;
   }
 
+  .pageHeaderContent p{
+    margin-top: 10%;
+  }
+
+.cta{
+
+  padding-left: 1em;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+}
+.cta h1{
+  /* font-family: 'Swear-display', serif; */
+  font-size: 2em;
+  font-style: bold;
+}
+.cta img{
+  width: 48px;
+  height: 20px;
+
+  
+}
+
+
+.cta:hover{
+  color: #FE5B7A;
+
+}
+.cta:hover img{
+  
+    width: 88px;
+    height: 40px;
+    content: url('../images/arrow-pink.svg');
+}
+
 
   .pageHeaderCon {
     min-height: 780px;
@@ -142,7 +179,7 @@ h2,
     top: 0;
     right: 0;
 
-    background-image: url('../images/NEARLY-HERO.png');
+    /* background-image: url('../images/NEARLY-HERO.png'); */
 
     background-size: auto 150%;
   }
@@ -270,3 +307,28 @@ h2,
     color: blue;
     font-size: large;
   }
+
+
+  .btn-outline-secondary {
+    --bd-violet-bg: #FE5B7A;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #0c0c0c;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+  }
+.mainintro{
+background-image: url('../images/Husky-removebg.png');
+background-position: right -160px top;
+/* background-position-y: top; */
+background-repeat: no-repeat;
+background-size: 30%;
+}
