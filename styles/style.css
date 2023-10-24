@@ -1,4 +1,129 @@
+@font-face {
+    font-family: 'paralucent'; /*a name to be used later*/
+    src: url(../fonts/Paralucent/Paralucent-Light.ttf); /*URL to font*/
+}
+@font-face {
+  font-family: 'Swear-display'; /*a name to be used later*/
+  font-weight: italic;
+  src: url(../fonts/Swear-display/Swear-Display-Thin-Italic.otf) format("opentype"); /*URL to font*/
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: paralucent, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.7em;
+    background: #E4E4E4;
+    transition: all 0.2s ease-in-out;
+  }
+
+  
+h1, h2 {
+  font-weight: 300;
+  line-height: 0.95em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2, .herotext {
+  font-size: 3em;
+}
+@media (min-width: 992px) {
+  h2, .herotext {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1200px) {
+  h2, .herotext {
+    font-size: 5em;
+  }
+}
 .tempbox{
     background-color: red;
     color: white;
+}
+section.sectionBg.gradient-red {
+    background: #FE5B7A;
+    /* background: linear-gradient(0deg, rgba(228, 228, 228, 0) 0%, #fe5b7a 100%); */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 90%);
+  }
+
+  .pageHeaderCon {
+    min-height: 780px;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+.neu{
+  
+  background-image: url('../images/circle_white.svg');
+  background-size: 100% 95%;
+  background-position-y: bottom;
+/* background-position: 25% 75%; */
+  background-repeat: no-repeat;
+  align-items: center;
+  /* position: absolute; */
+  /* width: 120%;
+
+  height: 140%; */
+  /* top: -10%;
+  left: -100%; */
+  font-family:'Swear-display', serif;
+  font-size:1em;
+
+}
+
+  
+h2 .herotext .neu {
+
+    font-weight: 300;
+    font-style: italic;
+     position: relative;
+     
+    display: inline-block; 
+    z-index: -1;
+  }
+
+
+    .pageHeaderCon {
+      min-height: 780px;
+      display: flex;
+      align-items: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+/* h2 span:before, .hometitle .neu:before {
+    content: " ";
+    
+    width: 120%;
+    height: 140%;
+    top: -10%;
+    left: -10%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+  } */
+
+  .bgimgage{
+    width: 40vw;
+    height: 150vh;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-image: url('../images/NEARLY-HERO.png');
+    
+    background-size: auto 150%; 
+  }
+img{
+  
 }
