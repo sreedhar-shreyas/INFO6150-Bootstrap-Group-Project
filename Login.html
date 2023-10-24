@@ -12,12 +12,12 @@
     <div class="container-fluid">
         
                 <form class="mx-auto">
-                    <img class="huskyImg" src="Images/Husky_login.png" />
+                    <img class="img-fluid img-thumbnail" src="Images/Husky_login.png" />
                     <h4 class="text-center mt-3"> Please Login</h4>
                     <div class="mb-3 mt-3">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
- 
+                      <span id = "exampleInputEmail1Error" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -25,15 +25,126 @@
                       <div id="emailHelp" class="form-text">Forget password?</div>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary" >Login</button>
+                    <button type="submit" class="btn btn-primary" id="submitbtn" disabled>Login</button>
                   </form>
   
     </div>
 
     <footer class="footer text-center">
+      <div class="text-center">
+        <a href="#" class="pagination page-link">Contact Us</a>
+      </div>
+        <div>
             <summary class="text-white">
                 © NEARLY 2023.
             </summary>
+        </div>
+            
     </footer>
+
+    <script>
+      const regExEmail = /^[a-zA-Z0-9._%+-]+@northeastern\.edu$/;
+      const regExPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+
+
+      var isEmailInValid = true;
+	    var isPasswordInValid = true;
+
+      const exampleInputEmail1 = document.getElementById("exampleInputEmail1");
+	    const exampleInputPassword1 = document.getElementById("exampleInputPassword1");
+      const submitbtn = document.getElementById("submitbtn");
+      const emailError = document.getElementById("exampleInputEmail1Error");
+
+      exampleInputEmail1.addEventListener('input', inputValidation);
+	    exampleInputPassword1.addEventListener('input', inputValidation);
+
+
+      function inputValidation(details){
+        const value = details.target.value;
+        const ids = details.target.id;
+        const inputDetails = document.getElementById(ids);
+
+
+        switch(ids) {
+          case "exampleInputEmail1":
+            if(!value.trim().match(regExEmail)){
+              emailError.textContent = "Invalid Email Id";
+              emailError.style.display = "block";
+					    isEmailInValid = true;
+              inputDetails.style.borderColor = "red";
+              inputDetails.classList.add("text-error");
+              inputDetails.classList.remove("text-success")
+
+				 
+            }
+				    else{
+              emailError.style.display = "none";
+					    isEmailInValid = false;
+              inputDetails.style.borderColor = "green";
+              inputDetails.classList.add("text-success");
+              inputDetails.classList.remove("text-error");
+
+            }
+			    	break;
+
+			    case "exampleInputPassword1":
+				    if(!value.trim().match(regExPassword)){
+              emailError.textContent = "Invalid Password";
+              emailError.style.display = "block";
+              isPasswordInValid = true;
+              inputDetails.style.borderColor = "red";
+              inputDetails.classList.add("text-error");
+              inputDetails.classList.remove("text-success")
+
+				    }
+				    else{
+              emailError.style.display = "none";
+					    isPasswordInValid = false;
+              inputDetails.style.borderColor = "green";
+              inputDetails.classList.add("text-success");
+              inputDetails.classList.remove("text-error");
+
+
+            }
+			    	break;
+      }
+
+      toggleSubmitButton();
+    }
+    
+    function toggleSubmitButton() {
+      if (!isEmailInValid && !isPasswordInValid){
+        submitbtn.removeAttribute("disabled");
+	   	}
+		  else {
+        submitbtn.setAttribute("disabled",true);
+		  }
+			
+	  }
+
+    function clearDetails() {
+      exampleInputEmail1.value = '';
+      exampleInputPassword1.value = '';
+      exampleInputEmail1.classList.remove("text-error", "text-success");
+      exampleInputEmail1.style.borderColor = '';
+      exampleInputPassword1.classList.remove("text-error", "text-success");
+      exampleInputPassword1.style.borderColor = '';
+
+
+    }
+
+    submitbtn.addEventListener('click', function(event) {
+      event.preventDefault();
+		  if (!isEmailInValid && !isPasswordInValid){
+        alert("Data Saved Successfully");
+        clearDetails();
+        submitbtn.setAttribute("disabled", true);
+		  }
+		  else {
+			  alert("Please enter correct input details");
+		  }
+  });
+
+    </script> 
 </body>
 </html>
