@@ -55,7 +55,7 @@ form{
     position: relative;
     padding: 25px;
 }
-img{
+.imgfoot{
     width: 100%;
     height: auto;
     padding: 0px;
@@ -77,11 +77,15 @@ img{
 }
 .footersocials img{
 width: 30px;
+background-color: #E4E4E4;
+
 }
 .footersocials{
     float: right;
     width: 50%;
 }
+svg {width: 50px; height: auto;
+padding: 10px;} 
 #footerEmail {
     font-size: xx-large;
     font-weight: normal;
@@ -116,9 +120,9 @@ text-align: center;
   src: url(../fonts/Swear-display/Swear-Display-Thin-Italic.otf) format("opentype");
 }
 .footerheading{
-font-size: xx-large;
+font-size: 60px;
 }
 .chat{
 color: blue;
-font-size: large;
+font-size: 30px;
 }
