@@ -148,6 +148,7 @@ form{
   justify-content: flex-end; 
   align-items: center;
   background-color: #f2f2f235;
+  padding: 1em;
 }
 
 .navbar-item {
@@ -258,7 +259,6 @@ cta{
 .cta img{
   width: 48px;
   height: 20px;
-
   
 }
 
