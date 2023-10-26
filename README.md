@@ -16,11 +16,11 @@ Throuogh this website/webapp we aim to find people the right matches for creatin
 - 7.Toasts in homepage.html
 - 8.Navbar: The entire navigation bar on both pages.
 - 9.Badge: Used in the navbar for displaying notifications and a new post. Example: <span class="badge badge-pill badge-primary">New</span>
-- 10.Dropdown: Used in the navbar for the "My Profile" section. Example: <div class="navbar-item dropdown"> and <ul class="dropdown-menu" aria-labelledby="navbarDropdown">.
+- 10.Dropdown: Used in the navbar for the "My Profile" section. Exmaple: class="dropdown-menu" aria-labelledby="navbarDropdown">.
 - 11.Row and Column: Used within the container to organize the layout into rows and columns. Example: <div class="row">
 - 12.Form Text-Error: Used within the form to validate the username and password using text error.
 - 13.Form component- It is used in Login.html page to create a email address and password based login page.
-- 14. toggleSubmitBtn - Used to enable or disable submit button
+- 14.ToggleSubmitBtn - Used to enable or disable submit button
 - 15.Pagination component - It is used in Login.html page to create Contact Us field.
 - 15.Image component - It is used in Login.html, home page to add an image. "img-fluid img-thumbnail" class is used.
 - 16.clearDetails in login.html to clear input information after the value is submitted.
