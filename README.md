@@ -25,3 +25,12 @@ Throuogh this website/webapp we aim to find people the right matches for creatin
 - 15.Image component - It is used in Login.html, home page to add an image. "img-fluid img-thumbnail" class is used.
 - 16.clearDetails in login.html to clear input information after the value is submitted.
 - 17.Form Text-Error: Used within the form to validate the username and password using text error.
+
+
+## Project Name - NEARLY -  Northeastern University Only Roommate Finder. 
+## Proposed Frontend Technical Stack  
+- HTML
+- JS
+- Sass
+- Bootstrap
+- React
