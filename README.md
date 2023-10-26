@@ -7,7 +7,7 @@ Throuogh this website/webapp we aim to find people the right matches for creatin
 
 ## List of Bootstrap components used 
 
-1 - Grid Containers on index.html (col-sm, col-md)
-2 - Buttons on index.html (btn-outline)
-3 - Jumbotron on index.html
-4 - Accordian on index.html 
+- 1.Grid Containers on index.html (col-sm, col-md)
+- 2.Buttons on index.html (btn-outline)
+- 3.Jumbotron on index.html
+- 4.Accordian on index.html 
