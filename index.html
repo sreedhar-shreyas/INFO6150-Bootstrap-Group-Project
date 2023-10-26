@@ -15,7 +15,7 @@
 
 <body>
     <div class="row">
-        <nav class="navbar fixed-top bg-*-tertiary">
+        <nav class="navbar navbar-expand-lg fixed-top bg-*-tertiary">
 
         <div class="logo">
           <img src="./images/mascot.jpeg" alt="Logo" style="height: 40px; width: auto;" /> NEARLY
@@ -25,20 +25,20 @@
         </div>
         <div class="navbar-item">
           <a href="#">
-            Post <span class="badge badge-pill badge-primary">New</span>
+            Posts <span class="badge badge-pill bg-dark">New!</span>
           </a>
         </div>
-        <div class="navbar-item">
+        <!-- <div class="navbar-item">
           <a href="#">
             Notifications <span class="badge badge-pill badge-danger">5</span> 
           </a>
-        </div>
+        </div> -->
         <div class="navbar-item">
           <a href="#">
             How It Works <i class="bi bi-gear-fill"></i>
           </a>
         </div>
-        <div class="navbar-item dropdown">
+        <!-- <div class="navbar-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-person-circle"></i> My Profile
           </a>
@@ -48,13 +48,14 @@
             <li><a class="dropdown-item" href="#">Privacy</a></li>
             <li><a class="dropdown-item" href="#">Sign Out</a></li>
           </ul>
-        </div>
+        </div> -->
         <div class="navbar-item">
           <a href="#" class="contact-us" data-hover-text="Contact Us">Contact Us</a>
         </div>
       </nav>
     
    </div>
+
     <!-- Main Hero Section Shreyas S Sreedhar -->
 
     <section class="sectionBg gradient-red">
@@ -94,7 +95,9 @@
                                                 <!-- <button class="btn btn-outline-secondary" type="button">Signup</button>
                           <button class="btn btn-outline-secondary" type="button">Login</button> -->
                                                 <div class="cta">
-                                                    <h1> signup</h1> <img src="./images/arrow-black.svg">
+                                                    <a href="Login.html" >
+                                                    <h1> Login</h1> <img src="./images/arrow-black.svg">
+                                                </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -122,7 +125,7 @@
 
             <div class="p-5 mb-4 bg-body-tertiary rounded-3">
                 <div class="container-fluid py-5 mainintro">
-                    <h1 class="display-5 fw-bold">NEARLY- Northeastern Uni Roomate Locater </h1>
+                    <h1 class="display-5 fw-bold">NEARLY-  <a href="www.northeastern.edu" data-bs-toggle="tooltip" data-bs-title="Click to Login" > Northeastern </a> Uni Roomate Locater </h1>
                     <p class="col-md-8 fs-4">Share experiences beyond just shared walls. Match with the right
                         roomate(s), build memories. </p>
                     <!-- <img src="./images/Husky-removebg.png"> -->
@@ -132,11 +135,11 @@
             <div class="row align-items-md-stretch">
                 <div class="col-md-6">
                     <div class="h-100 p-5 text-bg-dark rounded-3">
-                        <h2>Find my Future Roomates</h2>
+                        <h2>Find my Future Roomates </h2>
                         <p>Go beyond your social media apps, and connect with people from Northeastern. You’re about to
                             have the best grad school experience – all you need are some good pics and a solid bio to
                             get started.</p>
-                        <button class="btn btn-outline-light" type="button">Find Roomates</button>
+                        <button class="btn btn-outline-light" type="button">Find Roomates </button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -152,6 +155,42 @@
 
 
         </div>
+    </section>
+    <section>
+        <div class="container py-4">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is this?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> A Website that matches you with roomates of similar interests and someone you can get along well with.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Is there any different from existing alternatives? 
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Not sure, we're still figuring it out as well.  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Who's building this?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Sreedhar Shreyas, Karthik Vanabhojana, Anusha Poojari, Spandana A, Spoorthi K.</div>
+              </div>
+            </div>
+          </div>
+          </div>
     </section>
     <!-- Footer Section Karthik Vanabhojana-->
     <footer class="pt-3 mt-4 text-body-secondary border-top">
