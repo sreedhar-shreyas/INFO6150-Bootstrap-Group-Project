@@ -7,7 +7,10 @@ Throuogh this website/webapp we aim to find people the right matches for creatin
 
 ## List of Bootstrap components used 
 
-- 1.Grid Containers on index.html (col-sm, col-md)
+- 1.Grid Containers on index.html (col-sm, col-md) [Shreyas S Sreedhar]
 - 2.Buttons on index.html (btn-outline)
 - 3.Jumbotron on index.html
 - 4.Accordian on index.html 
+- 5.Footers on index.html (pt-3 mt-4 text-body-secondary border-top) [Karthik Vanabhojana]
+- 6.Bootstrap icons for instagram and linked logo
+- 7.Toasts in homepage.html
