@@ -511,3 +511,8 @@ background-size: 30%;
 
   animation: heartbeat 3s infinite;
 }
+.accordion-body{
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
