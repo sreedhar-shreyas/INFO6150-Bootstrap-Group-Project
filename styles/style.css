@@ -11,18 +11,6 @@ body {
   height: 100%;
 }
 
-@font-face {
-  font-family: 'paralucent'; 
-  src: url(../fonts/Paralucent/Paralucent-Light.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Swear-display'; 
-  font-style: italic;
-  font-weight: 100;
-  src: url(../fonts/Swear-display/Swear-Display-Thin-Italic.otf) format('opentype');
-}
-
 .navbar {
   display: flex;
   justify-content: flex-end; 
@@ -90,9 +78,4 @@ body {
   max-width: 100%; 
 }
 
-
-.tempbox{
-    background-color: red;
-    color: white;
-}
 
