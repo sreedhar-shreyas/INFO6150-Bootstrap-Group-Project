@@ -42,7 +42,13 @@ h2,
 .herotext {
   font-size: 3em;
 }
-
+/* .fline{
+  position: absolute;
+  top: calc(365% - 1px);
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+} */
 @media (min-width: 992px) {
 
   h2,
@@ -102,7 +108,7 @@ h2,
     font-size: 1em;
 
   }
-
+ 
 
   h2 .herotext .neu {
 
@@ -202,7 +208,6 @@ h2,
   .btn-primary {
     width: 100%;
   }
-
   .footer {
     position: absolute;
     bottom: 0;
@@ -226,6 +231,8 @@ h2,
     margin: 0 auto;
     position: relative;
     padding: 25px;
+}
+.imgfoot{
   }
 
   img {
@@ -249,7 +256,19 @@ h2,
     margin-bottom: 50px;
     position: relative;
     z-index: 2;
-  }
+}
+.footersocials img{
+width: 30px;
+background-color: #E4E4E4;
+
+}
+.footersocials{
+    float: right;
+    width: 50%;
+}
+svg {width: 50px; height: auto;
+padding: 10px;} 
+
 
   .footersocials img {
     width: 30px;
@@ -295,17 +314,18 @@ h2,
   font-family: 'Swear-display'; 
   font-weight: italic;
   src: url(../fonts/Swear-display/Swear-Display-Thin-Italic.otf) format("opentype");
-} */
+}
 
+ */
 
-  .footerheading {
-    font-size: xx-large;
+.footerheading{
+  font-size: 60px;
+  padding: 20px;
   }
-
 
   .chat {
     color: blue;
-    font-size: large;
+    font-size: 30px;
   }
 
 
@@ -331,4 +351,45 @@ background-position: right -160px top;
 /* background-position-y: top; */
 background-repeat: no-repeat;
 background-size: 30%;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+    transform-origin: left;
+  }
+  20%
+  {
+    transform: scale( 1 );
+    transform-origin: left;
+  }
+  40%
+  {
+    transform: scale( .75 );
+    transform-origin: left;
+  }
+  60%
+  {
+    transform: scale( 1 );
+    transform-origin: left;
+  }
+  80%
+  {
+    transform: scale( .75 );
+    transform-origin: left;
+  }
+  100%
+  {
+    
+    transform: scale( .75 );
+    transform-origin: left;
+  }
+}
+
+.heartbeaticon
+{
+
+  animation: heartbeat 3s infinite;
 }
